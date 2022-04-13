@@ -1,0 +1,16 @@
+
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0% 20% 0% 20%;
+    background: linear-gradient(0deg, #d53369 0%, #daae51 100%);
+    /* background: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%); */
+}
+
+@media screen and (max-width: 800px) {
+    .background {
+        padding: 0% 5% 0% 5%;
+    }
+}

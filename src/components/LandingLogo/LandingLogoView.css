@@ -1,0 +1,64 @@
+
+.header {
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-svg-wrapper {
+    width: 300px;
+    height: 250px;
+    fill: #fff;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.header>h1 {
+    font-size: 100px;
+    letter-spacing: 1px;
+    color: #fff;
+    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+    line-height: 95px;
+}
+
+.usage-policy-button {
+    font-family: 'ProductSansRegular';
+    margin-top: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 40px;
+    color: #d53369;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    padding:10px;
+    background-color: white;
+    opacity: 0.7;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media screen and (max-width: 800px) {
+.header>h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    line-height: 55px;
+}
+.header-svg-wrapper {
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    opacity: 0.8;
+    margin: auto;
+}
+
+}
