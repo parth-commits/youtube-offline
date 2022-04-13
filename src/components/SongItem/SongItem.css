@@ -1,0 +1,134 @@
+.song-item-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-item-wrapper-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    width: calc(100% - 200px);
+}
+
+.song-item-img {
+    position: relative;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(10deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.song-item-content {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.song-item-content-title {
+    font-size: 25px;
+    margin: 0;
+    color: #e6d5b1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.song-item-content-author {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    overflow: hidden;
+    color: #e6d5b1;
+    max-width: 100%;
+}
+
+.song-item-download-button {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    animation: shake 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 800px) {
+    .song-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+    }
+    .song-item-wrapper-2 {
+        flex-direction: row;
+        width: 100%;
+    }
+    .song-item-img {
+        position: relative;
+        border-radius: 20px;
+        width: 35vw;
+        height: 35vw;
+        object-fit: cover;
+    }
+    .song-item-content-title {
+        font-size: 25px;
+        margin: 0;
+        color: #e6d5b1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        max-width: 100%;
+    }
+    .song-item-content-author {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        font-size: 20px;
+        color: #e6d5b1;
+        max-width: 100%;
+    }
+    .song-item-content {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .song-item-download-button {
+        margin-top: 20px;
+    }
+}
