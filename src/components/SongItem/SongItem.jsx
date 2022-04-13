@@ -21,7 +21,7 @@ const SongItem = (props) => {
                 const href = window.URL.createObjectURL(blob);
                 const link = document.createElement('a');
                 link.href = href;
-                link.setAttribute('download', 'my_music.mp3'); //or any other extension
+                link.setAttribute('download', `${props.songDetails.title}.mp3`);
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
