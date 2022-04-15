@@ -29,11 +29,6 @@ const SongItem = (props) => {
             .catch((err) => {
                 return Promise.reject({ Error: 'Something Went Wrong', err });
             })
-
-
-
-
-
     }
 
 
